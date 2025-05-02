@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tariff Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+<div id="container">
+<h2 id="title">Tariff Calculator</h2>
+<h2 id="author">By Billy Phan and Wesley Chou</h2>
+<label for="basePrice">Base Price (USD):</label>
+<input type="number" id="basePrice" placeholder="Enter Product Price" />
+
+<label for="countrySelect">Country of Origin:</label>
+<select id="countrySelect">
+
+  <option value="">Select Country</option>
+  <option value="Mexico">Mexico</option>
+  <option value="Canada">Canada</option>
+  <option value="Japan">Japan</option>
+  <option value="China">China</option>
+  <option value="EU">EU</option>
+  </select>
+  <br/>
+
+  <button id="calcButton" onclick="calculateTariff()">CALCULATE</button>
+
+  <div class="results" id="results">
+
+
+  </div>
+</div>
+</body>
+</html>
